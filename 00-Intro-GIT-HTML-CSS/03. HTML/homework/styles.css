@@ -1,0 +1,28 @@
+body {
+  background-image: url('./fondo.jpg');
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgb(170, 132, 132);
+  }
+  
+  h1{
+      color:dodgerblue
+  }
+#thirdDiv{
+    width: 500px;
+    height: 700px;
+    background-color:dodgerblue;
+    padding: 50px;
+    border: solid 1px;
+    
+}
+#spanId{
+    font-size: 50px;
+    margin: 50px;
+}
+.imagen1{
+   width: 450px; 
+}
+.imagen2{
+    width: 450px;
+}
