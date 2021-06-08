@@ -60,7 +60,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join('');
+  return palabras.join(' ');
 }
 
 
@@ -117,24 +117,23 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  if ( argurment.length > 1) return 0;
-    var total = 1;{
-  for (var i = 1; i < total.length; i++)
-   total = total * argument;
- return total;
-}
-
+  if(arguments.length < 1) return 0;
+    var total = 1
+  for(var i = 0; i < arguments.length; i++){
+    total = total * arguments[i];
+  }
+  return total;
 }
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var elementos = 0;
-  for (var i = 0; i < arreglo.length; i++)
+  let contador = 0;
+  for (let i = 0; i < arreglo.length; i++)
     if ( arreglo[i] > 19) {
-      elementos++
+      contador++
     }
-    return elementos
+    return contador
 }
 
 
@@ -144,9 +143,9 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
   if (numeroDeDia === 1 || numeroDeDia === 7){
-    return 'Es fin de semana'
+    return "Es fin de semana"
   }
-  return 'Es un dia laboral'
+  return "Es dia Laboral"
 } 
 
 
@@ -244,17 +243,18 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:var array = [];
-  var suma = numero;
-  for(var i= 0; i<10; i++) {
-    if(i === 5) continue;
-    else {
+ var array = [];
+ var suma = numero;
+ for( var i = 0; i<10; i++){
+   if (i === 5) continue;
+    else{
       suma = suma + 2;
       array.push(suma);
     }
   }
-  return array;
+   return array;
+ 
 }
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
